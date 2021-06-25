@@ -11,6 +11,10 @@
     모델을 훈련하는데 쓴 파일입니다.
     데이터의 경우 캐글에서 OCT데이터를 받아서 사용하였습니다.
     
+# Study
+    컴퓨터비전과 딥러닝 네트워크와 관련하여 스터디를 한 자료입니다.
+    리파지토리 소유주인 고준서가 제작하였습니다. 사용하실 때에는 출처를 남겨주세요.
+    
 # Images
 <img width="750" alt="스크린샷 2021-06-25 오후 4 27 41" src="https://user-images.githubusercontent.com/50725139/123387022-4573d680-d5d2-11eb-8f6b-14d268937c72.png">
 <img width="750" alt="스크린샷 2021-06-25 오후 4 28 18" src="https://user-images.githubusercontent.com/50725139/123387085-5a506a00-d5d2-11eb-9783-4037db306dbf.png">
