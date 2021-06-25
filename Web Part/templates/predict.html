@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="pt-20 p-10">    
+    <div class="lg:flex">
+        <img src={{gradcam_url}}>
+        <div  class="p-2 text-sm font-normal">
+            <p> 위에 사진은 인공지능이 어떤 부분에 집중하여 해당 이미지를 아래의 질병으로 판별했는지를 보여줍니다. </p>
+            <p> 빨간색에 가까울 수록 인공지능이 집중한 부분입니다. </p>
+        </div>
+        <div>
+            <div class="flex p-5">
+                <p class="font-semibold text-2xl">진단결과:</p>
+                <p class="pl-3 font-semibold text-2xl text-red-800">{{information.label}}</p>
+            </div>
+            <div class="pl-5 lg:m-5 font-semibold text-sm border-2 rounded-lg">
+                <div class="flex">
+                    <p>CNV: </p>
+                    <p class="pl-2 text-red-800">{{(information.softmax[0]*100)}}%</p>
+                </div>  
+                <div class="flex">
+                    <p>DME: </p>
+                    <p class="pl-2 text-red-800">{{(information.softmax[1]*100)}}%</p>
+                </div>
+                <div class="flex">
+                    <p>DRUSEN: </p>
+                    <p class="pl-2 text-red-800">{{(information.softmax[2]*100)}}%</p>
+                </div>
+                <div class="flex">
+                    <p>NORMAL: </p>
+                    <p class="pl-2 text-red-800">{{(information.softmax[3]*100)}}%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

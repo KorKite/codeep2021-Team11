@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="pt-20 p-10 bg-gray-50">
+    <div class="p-6 lg:p-16 bg-yellow-100">
+        <div class="font-semibold text-2xl">
+            <p>인공지능을 활용한 OCT질병 판독기</p>
+        </div>
+        <div class="pt-3 font-normal">
+            <p>인공지능을 통해서 여러 질병을 분류하는 연구는 오랜기간 수행되어 왔습니다.</p>
+            <p>본 팀은 인공지능을 활용하여 OCT내에서 질병을 판독하는 연구를 수행했습니다.</p>
+            <p>그리고 실제 의사분들이 현업에서 활용할 수 있도록 서비스를 제작하였습니다.</p>
+        </div>
+        <div class="pt-3 font-normal">
+            <div class="flex">
+                <p>이 인공지능은</p> 
+                <p class=" pl-2 pr-2 font-bold text-red-800">CNV, DME, DRUSEN</p>
+                <p>3가지의 질병과</p>
+                <p class=" pl-1 pr-1 font-bold text-red-800">정상군</p>
+                <p> 총 4개의 클래스를 분류합니다.</p>
+            </div>
+            <div class="flex">
+                <p>본 인공지능의 정확도는 테스트 케이스에 대해서 </p> 
+                <p class=" pl-2 pr-2 font-bold text-red-800">98.04%</p>
+                <p>의 정확도를 보입니다.</p>
+               
+            </div>
+            <p class="font-light text-xs pt-2">(약간의 에러를 가질 수 있습니다. 특히 DME에서 많은 에러가 검출됨을 유의해주세요.)</p>
+        </div>
+    </div>
+    <p class="pt-10 pl-6"> 아래에 파일을 선택하여 OCT이미지를 업로드 하세요. </p>
+    <form class="pt-3 pb-10 pl-6" method="POST" enctype = "multipart/form-data">
+        {{ form.csrf_token }}
+        <!-- 오류표시 Start -->
+        {% for field, errors in form.errors.items() %}
+        <div class="alert alert-danger" role="alert">
+            <strong>{{ form[field].label }}</strong>: {{ ', '.join(errors) }}
+        </div>
+        {% endfor %}
+        <!-- 오류표시 End -->
+        <div class="flex">
+            <div>
+                <input type="file" id="input_img" name="input_img" accept="image/jpeg">
+            </div>
+            <input class="text-lg rounded-lg bg-indigo-700 font-semibold text-white pt-2 pb-2 pl-3 pr-3" type = "submit"/>
+        </div>
+    </form>
+
+</div>
+
+<!-- 이미지 넣는 부분 -->
+
+{% endblock content %}
