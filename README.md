@@ -12,3 +12,5 @@
     데이터의 경우 캐글에서 OCT데이터를 받아서 사용하였습니다.
     
 # Images
+<img width="750" alt="스크린샷 2021-06-25 오후 4 27 41" src="https://user-images.githubusercontent.com/50725139/123387022-4573d680-d5d2-11eb-8f6b-14d268937c72.png">
+<img width="750" alt="스크린샷 2021-06-25 오후 4 28 18" src="https://user-images.githubusercontent.com/50725139/123387085-5a506a00-d5d2-11eb-9783-4037db306dbf.png">
