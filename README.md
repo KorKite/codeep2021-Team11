@@ -1,6 +1,8 @@
 # codeep2021-Team11
 성균관대학교 코딥러닝 관련 리파지토리입니다. 인공지능융합전공 18학번 고준서, 19학번 이나은, 박혜민 으로 구성된 팀입니다. 스터디, 개발 관련 리파지토리입니다.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aos5gDjtIQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# 결과 발표 영상 링크 확인
+https://www.youtube.com/watch?v=aos5gDjtIQw
 
 # Web Part
     인공지능 웹서비스를 제작하였습니다.
